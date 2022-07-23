@@ -1,0 +1,167 @@
+
+
+.cc-navbar{
+    background-color: rgba(43, 38, 38, 0.65);
+    font-family: Verdana, Geneva, Tahoma, sans-serif 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   box-shadow:1px 1px 3px rgba(255, 255, 255, 0.65);
+   z-index:99;
+}
+.cc-navbar .nav-link{
+    border-bottom: 1px solid transparent;
+    transition: padding-bottom .4s ease-in-out, border-color .3s ease;
+}
+.cc-navbar .nav-link:hover{
+    padding-bottom: 10px; /*marge de remplissage vers le bas*/
+    border-bottom-color:var(--bs-teal)
+}
+.cc-navbar a span{
+    color: rgb(42, 165, 63);
+}
+#navbar-logo i img{
+width: 30px;
+margin-bottom: 8px;
+margin-right: 10px;
+} 
+
+.banner{
+    background: linear-gradient(rgba(0,0,0,0.5) ,rgba(0,0,0,0.5)), url(../img/tout.jpg) center 
+    center fixed no-repeat; 
+   /* background-size: cover;*/
+   background-size:contain;
+    height: 800px;
+}
+.banner h1 span{
+    color: brown;
+}
+.banner .banner-desc{
+    font-size: 48px;
+    font-weight: 400;
+    color: aliceblue;
+}
+
+.banners{
+width: 100%;
+height: 40vh;
+background: linear-gradient(rgba(0,0,0,0.3) ,rgba(0,0,0,0.2)), url(../img/ap3.png) center 
+center no-repeat; 
+ background-size: cover;
+ background-position: 70%;
+}
+
+.banner-content{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+}
+.banner-content h3{
+    color: white;
+}
+.change-content::after{
+    content: '';
+    color: brown;
+    text-shadow: 2px 1px 5px black;
+    font-weight: bold;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext {
+      0%{ content: "chaussures femmes";} 
+      10%{ content: "vetements femmes";}
+      20%{ content: "chapeau femmes";}
+      30%{content: "chaussures hommes";} 
+      40%{ content: "vetements hommes";}
+      50%{ content: "cameras";} 
+      60%{ content: "laptop";} 
+      70%{ content: "airpords";} 
+      80%{ content: "gaming pc";} 
+      90%{ content: "ipad";} 
+      100%{ content: "autres";} 
+
+
+} 
+.search-box{
+    position: absolute;
+    margin-top: 50px;
+    left: 50%;
+    transform: translate(-50%,-50% );
+    background-color: cadetblue;
+    height: 60px;
+    border-radius: 55px;
+    padding: 10px;
+}
+.search-box:hover .search-text{
+    width: 100px;
+    padding: 0 6px;
+}
+.search-box:hover .search-btn{
+background-color:  rgb(42, 165, 63);
+}
+.search-btn{
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: rgb(42, 165, 63);
+    display: flex;
+    justify-content: center;
+}
+.search-text{
+    border: none;
+    outline: none;
+    background: none;
+    float: left;
+    padding: 0;
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+    width: 0;
+    transition: width 400ms;
+
+}
+.card{
+    box-shadow: 0 0 5px black ;
+}
+.card h4{
+   font-weight: bold;
+  text-align: center;
+}
+.card p{
+    font-weight: bold; 
+    text-align: center;
+}
+
+#btn2{
+text-align: center;
+margin-top: 15px;
+}
+#btn2 button{
+    width: 120px;
+    height: 30px;
+    background-color:rgb(47, 75, 50);
+    border: none;
+    letter-spacing: 3px;
+    transition: 0.3s ease;
+    cursor: pointer;
+
+}  
+#btn2 button:hover{
+background-color: rgb(83, 109, 57);
+box-shadow: 0 0 5px  rgb(83, 109, 57),
+0 0 20px  rgb(83, 109, 57),
+0 0 60px  rgb(83, 109, 57),
+0 0 150px  rgb(83, 109, 57);
+}
+
+ .btn-order{
+    color:var(--bs-teal);
+    border-color:var(--bs-teal);
+    transition:0.5s  ;
+ }
+ .btn-order:hover,
+ .btn-order:active{
+color: aliceblue;
+background-color:var(--bs-teal);
+ }
+ 
