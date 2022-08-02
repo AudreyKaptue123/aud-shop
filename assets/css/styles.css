@@ -1,4 +1,24 @@
+*
+.section-m1{
+   margin: 40px 0;
+}
 
+.section-p1{
+    padding: 40px 80px;
+}
+body{
+    width: 100%;
+}
+p{
+    font-size: 16px; 
+    margin: 15px 0 20px 0;
+
+}
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
 
 .cc-navbar{
     background-color: rgba(43, 38, 38, 0.65);
@@ -24,20 +44,83 @@ margin-right: 10px;
 } 
 
 .banner{
-    background: linear-gradient(rgba(0,0,0,0.5) ,rgba(0,0,0,0.5)), url(../img/tout.jpg) center 
-    center fixed no-repeat; 
-   /* background-size: cover;*/
+    background: linear-gradient(rgba(0,0,0,0.5) ,rgba(0,0,0,0.5)), url(../img/TOTO.jpg) center center
+     fixed no-repeat; 
+    background-size: cover;
    background-size:contain;
-    height: 800px;
+    height: 1000px;
+    width: 134%;
+    background-position: top 60% ; 
+    font-family:'Times New Roman', Times, serif;
+    padding: 0 80px ;
+    display: flex;
 }
-.banner h1 span{
-    color: brown;
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    height: 280px;
+}
+#feature .fe-box{
+   width: 120px; 
+   height: 180px;
+    text-align: center;
+    padding: 15px 10px;
+    box-shadow: 20px 20px 34px rgb(216, 205, 205); 
+    border: 1px solid #c0e0c5;
+    border-radius: 3px ;
+    margin: 10px 0 ;
+   
+}
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(117, 117, 126, 0.1);
+}
+
+#feature .fe-box img{
+
+    width: 100%;
+
+  margin-bottom: 10px;
+}
+/*.fe-box{
+    display: flex;
+    justify-content: space-between; 
+}*/
+#feature .fe-box h6{
+    margin: 10px 0 ;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 3px;
+    color: rgb(20, 20, 20);
+    background-color: #f0e7fa;
+    display: inline-block;  
+}
+#feature .fe-box:nth-child(2) h6{
+    background-color: rgb(212, 236, 214);
+}
+#feature .fe-box:nth-child(3) h6{
+    background-color: rgb(193, 218, 219);
+}
+#feature .fe-box:nth-child(4) h6{
+    background-color: rgb(252, 214, 225);
+}
+#feature .fe-box:nth-child(5) h6{
+    background-color: rgb(235, 231, 179);
+}
+#feature .fe-box:nth-child(6) h6{
+    background-color: rgb(180, 184, 243);
+}
+
+.banner h2 span{
+    color: rgb(2, 2, 2);
 }
 .banner .banner-desc{
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 400;
-    color: aliceblue;
+    color: aliceblue; 
 }
+
 
 .banners{
 width: 100%;
@@ -121,15 +204,72 @@ background-color:  rgb(42, 165, 63);
 
 }
 .card{
+
+    text-align: center;
     box-shadow: 0 0 5px black ;
+    width: 150px;
+    height: 290px;
 }
 .card h4{
    font-weight: bold;
-  text-align: center;
+  text-align: center; 
 }
 .card p{
     font-weight: bold; 
     text-align: center;
+    font-size: 14px;
+    color: rgb(42, 165, 63);
+}
+.card  .star{
+font-size: 12px;
+color: rgb(240, 187, 54);
+}
+
+#newsletter{
+ display: flex;   
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items:center;
+  background-repeat: no-repeat;
+  background-position:20% 30px ;
+  background-color: rgb(32, 31, 31);
+}
+#newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #585e5b;
+}
+#newsletter p{
+    font-size: 15px;
+    font-weight: 600;
+    color: #768078;
+}
+#newsletter p span{
+ color:rgb(83, 109, 57);
+}
+#newsletter input{
+    height: 3.15rem;
+    padding: 1.15rem;
+    font-size: 14px;
+    width:90%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline:none ;
+    height: 30px;
+}
+#newsletter button{
+    background-color:rgb(47, 75, 50);
+    border: none;
+    color:#fff;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 38px;
+    width:20%;
+}
+#newsletter .form{
+    display: flex;
+    width: 50%;
 }
 
 #btn2{
@@ -165,3 +305,53 @@ color: aliceblue;
 background-color:var(--bs-teal);
  }
  
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+
+}
+footer  h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 14px;
+    margin: 0 0 8px 0;
+}
+footer a{
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 10px 
+    ;
+}
+footer .follow{
+    margin-top: 20px;
+}
+footer .follow i{ 
+   color: rgb(72, 87, 79);
+   padding-right: 4px;
+   cursor: pointer;
+    
+}
+footer .install .row img{
+    border: 1px solid rgb(36, 41, 40) ;
+    border-radius: 6px;
+    width: 40%;
+    
+}
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+footer .copyright{
+    text-align: center;
+    width: 100%;
+}
