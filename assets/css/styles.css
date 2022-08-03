@@ -1,31 +1,18 @@
-*
-.section-m1{
-   margin: 40px 0;
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
 }
 
-.section-p1{
-    padding: 40px 80px;
-}
-body{
-    width: 100%;
-}
-p{
-    font-size: 16px; 
-    margin: 15px 0 20px 0;
-
-}
-
-h6{
-    font-weight: 700;
-    font-size: 12px;
-}
-
+/* navbar*/
 .cc-navbar{
-    background-color: rgba(43, 38, 38, 0.65);
+    background-color: rgba(73, 70, 70, 0.65);
     font-family: Verdana, Geneva, Tahoma, sans-serif 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    box-shadow:1px 1px 3px rgba(255, 255, 255, 0.65);
    z-index:99;
 }
+
 .cc-navbar .nav-link{
     border-bottom: 1px solid transparent;
     transition: padding-bottom .4s ease-in-out, border-color .3s ease;
@@ -35,323 +22,23 @@ h6{
     border-bottom-color:var(--bs-teal)
 }
 .cc-navbar a span{
-    color: rgb(42, 165, 63);
+    color: rgb(250, 4, 65);
 }
 #navbar-logo i img{
-width: 30px;
+width: 20px;
 margin-bottom: 8px;
 margin-right: 10px;
 } 
+/* banner*/
 
 .banner{
-    background: linear-gradient(rgba(0,0,0,0.5) ,rgba(0,0,0,0.5)), url(../img/TOTO.jpg) center center
-     fixed no-repeat; 
+    background: linear-gradient(rgba(128, 123, 123, 0.5) ,rgba(34, 32, 32, 0.5)), url(../img/ban.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: url(../img/ban.jpg); */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: cover;
-   background-size:contain;
-    height: 1000px;
-    width: 134%;
-    background-position: top 60% ; 
-    font-family:'Times New Roman', Times, serif;
-    padding: 0 80px ;
-    display: flex;
-}
-#feature{
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    flex-wrap: wrap; 
-    height: 280px;
-}
-#feature .fe-box{
-   width: 120px; 
-   height: 180px;
-    text-align: center;
-    padding: 15px 10px;
-    box-shadow: 20px 20px 34px rgb(216, 205, 205); 
-    border: 1px solid #c0e0c5;
-    border-radius: 3px ;
-    margin: 10px 0 ;
-   
-}
-#feature .fe-box:hover{
-    box-shadow: 10px 10px 54px rgba(117, 117, 126, 0.1);
-}
-
-#feature .fe-box img{
-
-    width: 100%;
-
-  margin-bottom: 10px;
-}
-/*.fe-box{
-    display: flex;
-    justify-content: space-between; 
-}*/
-#feature .fe-box h6{
-    margin: 10px 0 ;
-    padding: 9px 8px 6px 8px;
-    line-height: 1;
-    border-radius: 3px;
-    color: rgb(20, 20, 20);
-    background-color: #f0e7fa;
-    display: inline-block;  
-}
-#feature .fe-box:nth-child(2) h6{
-    background-color: rgb(212, 236, 214);
-}
-#feature .fe-box:nth-child(3) h6{
-    background-color: rgb(193, 218, 219);
-}
-#feature .fe-box:nth-child(4) h6{
-    background-color: rgb(252, 214, 225);
-}
-#feature .fe-box:nth-child(5) h6{
-    background-color: rgb(235, 231, 179);
-}
-#feature .fe-box:nth-child(6) h6{
-    background-color: rgb(180, 184, 243);
-}
-
-.banner h2 span{
-    color: rgb(2, 2, 2);
-}
-.banner .banner-desc{
-    font-size: 40px;
-    font-weight: 400;
-    color: aliceblue; 
-}
-
-
-.banners{
-width: 100%;
-height: 40vh;
-background: linear-gradient(rgba(0,0,0,0.3) ,rgba(0,0,0,0.2)), url(../img/ap3.png) center 
-center no-repeat; 
- background-size: cover;
- background-position: 70%;
-}
-
-.banner-content{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 10px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- 
-}
-.banner-content h3{
-    color: white;
-}
-.change-content::after{
-    content: '';
-    color: brown;
-    text-shadow: 2px 1px 5px black;
-    font-weight: bold;
-    animation: changetext 10s infinite linear;
-}
-@keyframes changetext {
-      0%{ content: "chaussures femmes";} 
-      10%{ content: "vetements femmes";}
-      20%{ content: "chapeau femmes";}
-      30%{content: "chaussures hommes";} 
-      40%{ content: "vetements hommes";}
-      50%{ content: "cameras";} 
-      60%{ content: "laptop";} 
-      70%{ content: "airpords";} 
-      80%{ content: "gaming pc";} 
-      90%{ content: "ipad";} 
-      100%{ content: "autres";} 
-
-
-} 
-.search-box{
-    position: absolute;
-    margin-top: 50px;
-    left: 50%;
-    transform: translate(-50%,-50% );
-    background-color: cadetblue;
-    height: 60px;
-    border-radius: 55px;
-    padding: 10px;
-}
-.search-box:hover .search-text{
-    width: 100px;
-    padding: 0 6px;
-}
-.search-box:hover .search-btn{
-background-color:  rgb(42, 165, 63);
-}
-.search-btn{
-    float: right;
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-    background-color: rgb(42, 165, 63);
-    display: flex;
-    justify-content: center;
-}
-.search-text{
-    border: none;
-    outline: none;
-    background: none;
-    float: left;
-    padding: 0;
-    color: #fff;
-    font-size: 16px;
-    line-height: 40px;
-    width: 0;
-    transition: width 400ms;
-
-}
-.card{
-
-    text-align: center;
-    box-shadow: 0 0 5px black ;
-    width: 150px;
-    height: 290px;
-}
-.card h4{
-   font-weight: bold;
-  text-align: center; 
-}
-.card p{
-    font-weight: bold; 
-    text-align: center;
-    font-size: 14px;
-    color: rgb(42, 165, 63);
-}
-.card  .star{
-font-size: 12px;
-color: rgb(240, 187, 54);
-}
-
-#newsletter{
- display: flex;   
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items:center;
-  background-repeat: no-repeat;
-  background-position:20% 30px ;
-  background-color: rgb(32, 31, 31);
-}
-#newsletter h4{
-    font-size: 22px;
-    font-weight: 700;
-    color: #585e5b;
-}
-#newsletter p{
-    font-size: 15px;
-    font-weight: 600;
-    color: #768078;
-}
-#newsletter p span{
- color:rgb(83, 109, 57);
-}
-#newsletter input{
-    height: 3.15rem;
-    padding: 1.15rem;
-    font-size: 14px;
-    width:90%;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    outline:none ;
-    height: 30px;
-}
-#newsletter button{
-    background-color:rgb(47, 75, 50);
-    border: none;
-    color:#fff;
-    border-radius: 4px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    height: 38px;
-    width:20%;
-}
-#newsletter .form{
-    display: flex;
-    width: 50%;
-}
-
-#btn2{
-text-align: center;
-margin-top: 15px;
-}
-#btn2 button{
-    width: 120px;
-    height: 30px;
-    background-color:rgb(47, 75, 50);
-    border: none;
-    letter-spacing: 3px;
-    transition: 0.3s ease;
-    cursor: pointer;
-
-}  
-#btn2 button:hover{
-background-color: rgb(83, 109, 57);
-box-shadow: 0 0 5px  rgb(83, 109, 57),
-0 0 20px  rgb(83, 109, 57),
-0 0 60px  rgb(83, 109, 57),
-0 0 150px  rgb(83, 109, 57);
-}
-
- .btn-order{
-    color:var(--bs-teal);
-    border-color:var(--bs-teal);
-    transition:0.5s  ;
- }
- .btn-order:hover,
- .btn-order:active{
-color: aliceblue;
-background-color:var(--bs-teal);
- }
- 
-footer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
-}
-footer .col{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 20px;
-
-}
-footer  h4{
-    font-size: 14px;
-    padding-bottom: 20px;
-}
-footer p{
-    font-size: 14px;
-    margin: 0 0 8px 0;
-}
-footer a{
-    font-size: 14px;
-    text-decoration: none;
-    color: black;
-    margin-bottom: 10px 
-    ;
-}
-footer .follow{
-    margin-top: 20px;
-}
-footer .follow i{ 
-   color: rgb(72, 87, 79);
-   padding-right: 4px;
-   cursor: pointer;
-    
-}
-footer .install .row img{
-    border: 1px solid rgb(36, 41, 40) ;
-    border-radius: 6px;
-    width: 40%;
-    
-}
-footer .install img{
-    margin: 10px 0 15px 0;
-}
-footer .copyright{
-    text-align: center;
-    width: 100%;
+    height: 100vh;
 }
