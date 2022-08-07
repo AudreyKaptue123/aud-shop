@@ -56,14 +56,13 @@ margin-right: 10px;
  margin: 0 0 10px 0;
 font-size: 22px;
 font-weight: 700;
-line-height: 55px;
+line-height: 45px;
 text-transform: uppercase;
 color: #fff;
 }
 
 .banner .row h2 span{
     color:black;
-
 }
 
 .banner .row p{
@@ -75,31 +74,26 @@ color: #fff;
     display: flex;
     align-items: center;
     justify-content: center; 
-    gap: 1rem;
+    gap:1rem;
     flex-wrap: wrap; 
-    height: 280px;
+    height: 300px;
 }
 
 #feature .fe-box{
-    width: 120px; 
-    height: 180px;
+    width: 130px; 
+    height: 190px;
      text-align: center;
-     padding: 15px 10px;
+     padding: 10px 10px;
      box-shadow: 20px 20px 34px rgb(216, 205, 205); 
      border: 1px solid #c0e0c5;
      border-radius: 3px ;
      margin: 10px 0 ;
-    
  }
-
 #feature .fe-box:hover{
     box-shadow: 10px 10px 54px rgba(117, 117, 126, 0.1);
 }
-
 #feature .fe-box img{
-
     width: 100%;
-
   margin-bottom: 10px;
 }
 /*.fe-box{
@@ -134,17 +128,13 @@ color: #fff;
 
 .card{
     text-align: center;
-    box-shadow: 0 0 5px black ;
-    width: 150px;
-    height: 290px;
+    color:rgb(33, 33, 72);
+    font-weight: bold;
 }
-.card h4{
-   font-weight: bold;
-  text-align: center; 
-}
-.card p{
-    font-weight: bold; 
-    text-align: center;
-    font-size: 14px;
-    color: rgb(42, 165, 63);
-}
+
+.card  .star{
+    font-size: 12px;
+    color: rgb(240, 187, 54);
+    }
+
+
