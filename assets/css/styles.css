@@ -126,6 +126,13 @@ color: #fff;
 }
 /* product */
 
+@media screen and (max-width: 767px)
+{
+
+ #product .container{
+    margin-top: 400px;
+}
+}
 .card{
     text-align: center;
     color:rgb(33, 33, 72);
@@ -222,4 +229,49 @@ color: #fff;
     transition: width 400ms;
 
 }
+/*  search  */
+#newsletter{
+    display: flex;   
+     justify-content: space-between;
+     flex-wrap: wrap;
+     align-items:center;
+     background-color:rgb(236, 106, 147);
+   }
 
+   #newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: blanchedalmond
+}
+#newsletter p{
+    font-size: 15px;
+    font-weight: 600;
+    color: blanchedalmond;
+}
+#newsletter p span{
+ color:black;
+}
+#newsletter input{
+    height: 3.15rem;
+    padding: 1.15rem;
+    font-size: 14px;
+    width:90%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline:none ;
+    height: 30px;
+}
+#newsletter button{
+    background-color:black;
+    border: none;
+    color:#fff;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 38px;
+    width:20%;
+}
+#newsletter .form{
+    display: flex;
+    width: 50%;
+}
