@@ -36,7 +36,7 @@ margin-right: 10px;
 /* banner*/
 
 .banner{
-    background: linear-gradient(rgba(128, 123, 123, 0.5) ,rgba(34, 32, 32, 0.5)), url(../img/ban.jpg);
+    background: linear-gradient(rgba(141, 133, 133, 0.5) ,rgba(128, 123, 123, 0.5)), url(../img/ban.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,6 +45,12 @@ margin-right: 10px;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    margin: 0 0 10px 0;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #fff;
+  }
 }
 @media screen and (max-width: 767px){
 .banner .row h2 {
@@ -101,7 +107,7 @@ color: #fff;
     justify-content: space-between; 
 }*/
 #feature .fe-box h6{
-    margin: 10px 0 ;
+    margin: 2px 0 ;
     padding: 9px 8px 6px 8px;
     line-height: 1;
     border-radius: 3px;
@@ -132,6 +138,12 @@ color: #fff;
  #product .container{
     margin-top: 400px;
 }
+
+.card img{
+    height: 25vh;
+    width: 70vw;
+}
+
 }
 .card{
     text-align: center;
@@ -235,26 +247,30 @@ color: #fff;
      justify-content: space-between;
      flex-wrap: wrap;
      align-items:center;
-     background-color:rgb(236, 106, 147);
+     background-color:rgb(214, 173, 253);
    }
 
    #newsletter h4{
     font-size: 22px;
     font-weight: 700;
-    color: blanchedalmond
+    color: black
 }
 #newsletter p{
     font-size: 15px;
     font-weight: 600;
-    color: blanchedalmond;
+    color: black;
 }
 #newsletter p span{
- color:black;
+ color:rgb(247, 241, 243);
+ font-weight: bold;
 }
 #newsletter input{
+    background-color:rgb(243, 243, 248);
+    color: black;
+    font-weight: bold;
     height: 3.15rem;
     padding: 1.15rem;
-    font-size: 14px;
+    font-size: 16px;
     width:90%;
     border: 1px solid transparent;
     border-radius: 4px;
@@ -262,9 +278,9 @@ color: #fff;
     height: 30px;
 }
 #newsletter button{
-    background-color:black;
+    background-color:rgb(231, 231, 250);
     border: none;
-    color:#fff;
+    color:black;
     border-radius: 4px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
@@ -274,4 +290,20 @@ color: #fff;
 #newsletter .form{
     display: flex;
     width: 50%;
+}
+
+/* footer */
+footer .install img{
+    border: 1px solid rgb(36, 41, 40) ;
+    border-radius: 6px;
+    width: 25%;  
+}
+footer .install img{
+    margin: 10px;
+    margin-left: 100px;
+    align-items: center;
+    justify-content: center;
+}
+footer .install .row-top{
+    width: 25%; 
 }
