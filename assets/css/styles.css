@@ -59,7 +59,7 @@ margin-right: 10px;
 }
 .banner .row h2{
  margin: 0 0 10px 0;
-font-size: 22px;
+font-size: 28px;
 font-weight: 700;
 line-height: 45px;
 text-transform: uppercase;
@@ -129,21 +129,40 @@ color: #fff;
 #feature .fe-box:nth-child(6) h6{
     background-color: rgb(180, 184, 243);
 }
+
+
+
+
 /* product */
 
 @media screen and (max-width: 767px)
 {
 
- #product .container{
-    margin-top: 400px;
+    #product .container{
+        margin-top: 400px;
+    }
+    .card img{
+        height: 30vh;
+        width: 65vw;
+    }
 }
 
-.card img{
-    height: 25vh;
-    width: 70vw;
+#product .card{
+    transition: 0.5s;
+    overflow: hidden;
+}
+#product .card:hover {
+    transition: 0.3s;
+    /* box-shadow: 0 0 1rem rgba(0, 0, 0, 0.394); */
+}
+#product .card img{
+    transition: 0.5s;
+}
+#product .card:hover img{
+    transform: scale(1.15);
+    transition: 0.5s;
 }
 
-}
 .card{
     text-align: center;
     color:rgb(33, 33, 72);
@@ -151,13 +170,14 @@ color: #fff;
 }
 
 .card  .star{
-    font-size: 12px;
+    font-size: 13px;
     color: rgb(240, 187, 54);
     }
+  
 
    /*banners footer */
    .banners{
-    background:url(../img/banners2.jpg);
+    background:url(../img/banners3.jpg);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -182,7 +202,6 @@ color: #fff;
     border: none;
     color:#fff;
     border-radius: 4px;
-    height: 38px;
 }
 /* 
 .banners button{
